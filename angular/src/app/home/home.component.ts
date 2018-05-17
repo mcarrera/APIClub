@@ -32,7 +32,7 @@ export class HomeComponent extends AppComponentBase implements AfterViewInit {
             initSparkline();
         });
 
-        var realtime = 'on';
+        var realtime = 'off';
         function initRealTimeChart() {
             //Real time ==========================================================================================
             var plot = ($ as any).plot('#real_time_chart', [getRandomData()], {
