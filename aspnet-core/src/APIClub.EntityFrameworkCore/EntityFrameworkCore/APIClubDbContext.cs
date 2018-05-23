@@ -12,6 +12,8 @@ namespace APIClub.EntityFrameworkCore
         /* Define a DbSet for each entity of the application */
 
         public DbSet<Stock> Stocks { get; set; }
+        public DbSet<Portfolio> Portfolios { get; set; }
+        public DbSet<Transanction> Transanctions { get; set; }
 
         public APIClubDbContext(DbContextOptions<APIClubDbContext> options) : base(options)
         {
